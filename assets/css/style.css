@@ -554,6 +554,12 @@ h3 { font-size: var(--fs-3); }
     padding: 10px 15px;
     color: var(--cool-text);
     border-radius: 4px;
+    outline: 0;
+}
+
+.contact-us form input:focus,
+.contact-us form textarea:focus {
+    outline: 4px solid hsl(196, 73%, 90%);
 }
 
 .contact-us form input::placeholder,
@@ -804,6 +810,37 @@ h3 { font-size: var(--fs-3); }
         max-width: 300px;
     }
 
+    .our-company-content {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+       /* 
+    * blog
+    */
+    .blog-list {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+       /* 
+    * contcat
+    */
+
+    .contact-us input[type="email"] {
+        width: calc(100% - 20px - 40%);
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .contact-us input[type="text"] {
+        width: 40%;
+        display: inline-block;
+    }
 
 }
 
